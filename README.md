@@ -1,0 +1,1 @@
+This is my first JavaScript project. I will learn the basics of logic, syntax, problem solving and anger management. Wish me luck!
