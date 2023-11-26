@@ -35,30 +35,49 @@ function game(){
 }
 
 function playRound (playerSel, compSel) {    
+    let compScore = 0
+    let playerScore = 0
     if (compSel == "paper" && playerSel == "rock") {
+        let compScore =+ 1;
         return "Computer wins!"}
     else if (compSel == "paper" && playerSel == "scissors"){
+        let playerScore =+ 1;
         return "Player wins!"}
     else if (compSel == "paper" && playerSel == "paper"){
         return "Tie"}
     else if (compSel == "rock" && playerSel == "rock"){
         return "Tie"}
     else if (compSel == "rock" && playerSel == "paper"){
+        let playerScore =+ 1;
         return "Player Wins!"}
     else if (compSel == "rock" && playerSel == "scissors"){
+        let compScore =+ 1;
         return "Computer wins!"}
     else if (compSel == "scissors" && playerSel == "rock"){
+        let playerScore =+ 1;
         return "Player Wins!"}
     else if (compSel == "scissors" && playerSel == "paper"){
+        let compScore =+ 1;
         return "Computer Wins!"}
     else if (compSel == "scissors" && playerSel == "scissors"){
         return "Tie!"}
     else
         return "no such weapon in the arsenal"
 }
+let rounds = 0
+function score(){
+    rounds++
+    if (rounds <= 5){
+        return game()}
+    else 
+        return "this is the end of the game"
+}
 
-console.log(game())
-console.log(game())
-console.log(game())
-console.log(game())
-console.log(game())
+
+console.log(score())
+console.log(score())
+console.log(score())
+console.log(score())
+console.log(score())
+console.log(score())
+console.log(score())
